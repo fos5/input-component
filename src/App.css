@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* border: 1px solid red; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  overflow: hidden;
+  width: 97%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* Mobile Heading */
+.mobile-header {
+  display: none;
+  position: relative;
+  left: 20px;
+  top: 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 19px;
+  text-decoration: none;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+/* Left Panel */
+.left-side {
+  position: fixed;
+  background-color: #fafbfd;
+  width: 237px;
+  height: 200vh;
+}
+.header {
+  position: relative;
+  left: 20px;
+  top: 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 19px;
+  text-decoration: none;
+  color: black;
+}
+/* span */
+span {
+  color: #f7542e;
+}
+/* Bold */
+#toBold {
+  color: black;
+  font-weight: bold;
+}
+.nav-list {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+.nav-list li {
+  padding-bottom: 30px;
+  list-style: none;
+  color: #9e9e9e;
+  cursor: default;
+}
+/* Right Side */
+.right-side {
+  margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* header */
+.main-header h2 {
+  font-size: 27px;
+  margin-bottom: 50px;
+  color: #4f4f4f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+/* grids */
+.grids {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+}
+/* Groups */
+.grp-1 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px 30px;
+}
+.grp-2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px 30px;
+}
+.grp-3 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px 30px;
+}
+.grp-4 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px 30px;
+}
+/* label for the buttons */
+.input-label {
+  width: 54px;
+  height: 12px;
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+  opacity: 0.7;
+}
+/* labels */
+.labels {
+  margin-top: 20px;
+}
+.helperText {
+  display: block;
+  top: 10px;
+  width: 300px;
+}
+/* inputs */
+.inputs {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  padding-left: 15px;
+  font-size: 16px;
+  /* margin-bottom: 30px; */
+}
+/* Styling button components by classnames */
+.input3 {
+  border: 1px solid #2962ff;
+}
+
+.input3:focus {
+  outline: #2962ff;
+  border: 2px solid #2962ff;
+}
+.input4,
+.input6,
+.input9 {
+  border: 1px solid red;
+}
+.input4:focus,
+.input6:focus,
+.input9:focus {
+  outline: red;
+  border: 2px solid red;
+}
+.input13 {
+  height: 40px;
+  width: 200px;
+}
+.input14 {
+  height: 56px;
+  width: 200px;
+}
+.input15 {
+  height: 56px;
+  width: 100%;
+}
+textarea {
+  border: 1px solid #828282;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fafbfd;
+  font-weight: bolder;
+  text-align: center;
+  height: 30px;
+}
+footer p a {
+  color: #f7542e;
+}
+
+.grp-1 > div,
+.grp-2 > div,
+.grp-3 > div,
+.grp-4 > div,
+.grp-x {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Media Queries */
+/* @media only screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .left-side {
+    display: none;
+  }
+  .grids {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+  }
+  .grp-1,
+  .grp-2,
+  .grp-3,
+  .grp-4 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grp-1,
+  .grp-2,
+  .grp-3,
+  .grp-4 button {
+    width: 50%;
+  }
+  .header {
+    font-size: 40px;
+  }
+  footer {
+    display: none;
+  }
+} */
