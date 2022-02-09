@@ -34,7 +34,7 @@ body {
 
 /* Left Panel */
 .left-side {
-  position: fixed;
+  /* position: fixed; */
   background-color: #fafbfd;
   width: 237px;
   height: 200vh;
@@ -74,6 +74,7 @@ span {
 /* Right Side */
 .right-side {
   margin-left: 50px;
+  position: relative;
 }
 
 /* header */
